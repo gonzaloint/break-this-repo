@@ -1,1 +1,3 @@
 A repo to test magit and git
+
+I don't know where the changes went...
