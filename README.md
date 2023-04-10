@@ -18,3 +18,10 @@ change 4
 change 5
 
 change 6
+
+my branch change 1
+my branch change 2
+my branch change 3
+my branch change 4
+my branch change 5
+my branch change 6
