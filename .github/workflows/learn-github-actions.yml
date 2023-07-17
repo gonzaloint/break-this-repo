@@ -14,5 +14,5 @@ jobs:
           node-version: '14'
       - run: npm install -g bats
       - run: bats -v
-      - run: chmod +x my-script.sh
-      - run: ./.github/workflows/my-script.sh
+      - run: chmod +x /.github/scripts/my-script.sh
+      - run: ./.github/scripts/my-script.sh
