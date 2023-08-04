@@ -1,0 +1,21 @@
+name: upload-to-ghcr
+run-name: ${{ github.actor }} is trying to upload something to ghcr
+on:
+  push:
+    branches:
+      - second-branch
+jobs:
+  build_useless_server:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.1.0
+      - name: Publish Data Server Docker image to Github Packages Registry
+        uses: elgohr/Publish-Docker-Github-Action@v4
+        with:
+          name: publish to github container registry
+          registry: docker.pkg.github.com
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          workdir: ./
+          dockerfile: ./Dockerfile
+          tags: latest
