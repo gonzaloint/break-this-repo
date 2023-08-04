@@ -12,7 +12,7 @@ jobs:
       - name: Publish Data Server Docker image to Github Packages Registry
         uses: elgohr/Publish-Docker-Github-Action@v4
         with:
-          name: publish to github container registry
+          name: gonzaloint/break-this-repo/bash-in-alpine
           registry: docker.pkg.github.com
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.GHCR_TOKEN }}
